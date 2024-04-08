@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Clone Netflix</title>
+</head>
+<body class="container">
+    <!-- navbar con logo link, barra ricerca e utilities -->
+    <nav class="navbar navbar-expand-sm" aria-label="Third navbar example">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="assets/imgs/Netflix_Logo_RGB.png" alt="logo Netflix">
+            </a>
+            <button class="navbar-toggler text-bg-red " type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarsExample03">
+                <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+                    <li class="nav-item">
+                        <a class="nav-link link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link active" aria-current="page" href="#">TV Shows</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link" href="#">Movies</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link link" href="#">Recently Added</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link link" href="#">My List</a>
+                    </li>
+                </ul>
+                <!-- barra ricerca + icona ricerca PS. cliccare icona :P -->
+                <div class="forum">
+                    <form role="search">
+                        <input id="ricerca" class="form-control" type="search" placeholder="Search" aria-label="Search">
+                        <div class="position-absolute ">
+                            <i class="bi bi-search"></i>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- account utente -->
+            <div class="utente">
+                <ul class="d-flex">
+                    <!-- profilo in uso -->
+                    <li>KIDS</li>
+                    <!-- notifica -->
+                    <li class="campanella"><i class="bi bi-bell-fill"></i></li>
+                    <!-- immagine profilo con dropdown delle utilities -->
+                    <li class="dropdown">
+                        <a href="#" class="link-light text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="assets/imgs/movies/ProfiloNetflix.png" alt="user img" width="40" height="40">
+                        </a>
+                        <!-- sezione immagine profilo + dati utente -->
+                        <ul class="dropdown-menu bg-dark" style="right: 0; left: unset;">
+                            <div class="d-flex">
+                                <div class="user m-2 ms-3"></div>
+                                <div class="account m-2 text-light bg-transparent">
+                                    <h5 class="mb-0">Lorenzo Guardabascio</h5>
+                                    <p class="mb-0 opacity-50">loreguardagiu@gg.comme</p>
+                                </div>
+                            </div>
+                            <!-- utilities -->
+                            <div class="dropdown-divider bg-light"></div>
+                            <li><a class=" dropdown-item text-light bg-transparent" href="#"><i class="bi bi-person"></i>Profile</a></li>
+                            <li><a class=" dropdown-item text-light bg-transparent" href="#"><i class="bi bi-star"></i>Subscription</a></li>
+                            <li><a class=" dropdown-item text-light bg-transparent" href="#"><i class="bi bi-gear"></i>Settings</a></li>
+                            <li><hr class="dropdown-divider bg-light"></li>
+                            <li><a class=" dropdown-item text-light bg-transparent" href="#"><i class="bi bi-power"></i>Sing out</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+  </nav>
+<section>
+    <div class="container-fluid">
+        <div class="d-flex justify-content-between align-items-center">
+            <!-- titolo + generi -->
+            <div class="d-flex gap-2 align-items-center justify-content-center">
+                <!-- titolo -->
+                <a class="navbar-brand ps-2" href="#">
+                    <h1 class="text-white my-3">Tv Shows</h1>
+                </a>
+                <!-- dropdown generi-->
+                <ul class="navbar-nav ms-4">
+                    <li class="dropdown">
+                        <a class="nav-link dropdown-toggle border text-white d-flex gap-2 align-items-center px-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Genres</a>
+                        <ul class=" generi dropdown-menu bg-dark">
+                            <li><a class="dropdown-item text-white" href="#">Action</a></li>
+                            <li><a class="dropdown-item text-white" href="#">Fantasy</a></li>
+                            <li><a class="dropdown-item text-white" href="#">Horror</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- icone lista e griglia -->
+            <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off">
+                <label class="btn btn-outline-light" for="btnradio1">
+                    <i class="bi bi-blockquote-right"></i>
+                </label>
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                <label class="btn btn-outline-light" for="btnradio2">
+                    <i class="bi bi-grid-fill"></i>
+                </label>
+            </div>
+        </div>
+    </div>            
+</section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

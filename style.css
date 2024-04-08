@@ -1,0 +1,133 @@
+body {
+    background-color: #141414;
+}
+
+.navbar-brand img {
+    width: 120px;
+}
+
+.link {
+    color: white;
+    opacity: 0.5;
+}
+
+.link:hover {
+    color: white;
+    opacity: 1;
+}
+
+.link:focus {
+    color: white;
+    opacity: 1;
+}
+
+.active {
+    color: white !important;
+    opacity: 1;
+}
+
+.text-bg-red{
+    background-color: #E40714;
+}
+
+.forum {
+    position: relative;
+}
+
+.forum input {
+    border-radius: 30px;
+    opacity: 0;
+}
+
+.animazione {
+    animation: search 2s linear forwards;
+}
+
+@keyframes search {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.forum div {
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    padding: 4px;
+    text-align: center;
+    top: 2px;
+    right: 8px;
+}
+
+.forum i {
+    font-size: 20px;
+    color: #818181;
+    cursor: pointer;
+}
+
+.utente ul {
+    align-items: center;
+    list-style: none;
+    margin-bottom: 0;
+}
+
+.utente ul li {
+    color: white;
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+.utente ul li:first-child {
+    font-size: 20px;
+}
+
+.utente ul li:first-child:hover {
+    color: #E40714;
+} 
+
+.campanella {
+    font-size: 25px;
+}
+
+.campanella:hover {
+    color: #E40714;
+}
+
+.user {
+    width: 40px;
+    height: 40px;
+    background-image: url(/assets/imgs/movies/ProfiloNetflix.png);
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.dropdown ul li {
+    padding: 0;
+}
+
+.account h5 {
+    text-wrap: nowrap;
+}
+
+.dropdown ul li .bi {
+    padding-right: 5px;
+}
+
+.generi li a:hover {
+    color: black !important;
+}
+
+.generi li a:focus {
+    background-color: #E40714;
+}
+
+.btn {
+    width: 50px;
+    height: 35px;
+    border-radius: 0px;
+    opacity: 0.7;
+}
