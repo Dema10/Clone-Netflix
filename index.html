@@ -10,7 +10,7 @@
 </head>
 <body class="container">
     <!-- navbar con logo link, barra ricerca e utilities -->
-    <nav class="navbar navbar-expand-sm" aria-label="Third navbar example">
+    <nav class="navbar navbar-expand-lg" aria-label="Third navbar example">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <img src="assets/imgs/Netflix_Logo_RGB.png" alt="logo Netflix">
@@ -48,7 +48,7 @@
                 </div>
             </div>
             <!-- account utente -->
-            <div class="utente">
+            <div class="utente log">
                 <ul class="d-flex">
                     <!-- profilo in uso -->
                     <li>KIDS</li>
@@ -80,44 +80,192 @@
                 </ul>
             </div>
         </div>
-  </nav>
-  <!-- section del titolo bottone genere e icone -->
-<section>
-    <div class="container-fluid">
-        <div class="d-flex justify-content-between align-items-center">
-            <!-- titolo + generi -->
-            <div class="d-flex gap-2 align-items-center justify-content-center">
-                <!-- titolo -->
-                <a class="navbar-brand ps-2" href="#">
-                    <h1 class="text-white my-3">Tv Shows</h1>
-                </a>
-                <!-- dropdown generi-->
-                <ul class="navbar-nav ms-4">
-                    <li class="dropdown">
-                        <a class="nav-link dropdown-toggle border text-white d-flex gap-2 align-items-center px-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Genres</a>
-                        <ul class=" generi dropdown-menu bg-dark">
-                            <li><a class="dropdown-item text-white" href="#">Action</a></li>
-                            <li><a class="dropdown-item text-white" href="#">Fantasy</a></li>
-                            <li><a class="dropdown-item text-white" href="#">Horror</a></li>
-                        </ul>
-                    </li>
-                </ul>
+    </nav>
+    <!-- section del titolo bottone genere e icone -->
+    <section>
+        <div class="container-fluid">
+            <div class="d-flex justify-content-between align-items-center">
+                <!-- titolo + generi -->
+                <div class="d-flex gap-2 align-items-center justify-content-center">
+                    <!-- titolo -->
+                    <a class="navbar-brand ps-2" href="#">
+                        <h1 class="text-white my-3">Tv Shows</h1>
+                    </a>
+                    <!-- dropdown generi-->
+                    <ul class="navbar-nav ms-4">
+                        <li class="dropdown">
+                            <a class="nav-link dropdown-toggle border text-white d-flex gap-2 align-items-center px-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Genres</a>
+                            <ul class=" generi dropdown-menu bg-dark">
+                                <li><a class="dropdown-item text-white" href="#">Action</a></li>
+                                <li><a class="dropdown-item text-white" href="#">Fantasy</a></li>
+                                <li><a class="dropdown-item text-white" href="#">Horror</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- icone lista e griglia -->
+                <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off">
+                    <label class="btn btn-outline-light" for="btnradio1">
+                        <i class="bi bi-blockquote-right"></i>
+                    </label>
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                    <label class="btn btn-outline-light" for="btnradio2">
+                        <i class="bi bi-grid-fill"></i>
+                    </label>
+                </div>
             </div>
-            <!-- icone lista e griglia -->
-            <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-                <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off">
-                <label class="btn btn-outline-light" for="btnradio1">
-                    <i class="bi bi-blockquote-right"></i>
-                </label>
-                <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-                <label class="btn btn-outline-light" for="btnradio2">
-                    <i class="bi bi-grid-fill"></i>
-                </label>
+        </div>            
+    </section>
+    <!-- blocco con i tre caroselli e le varie img dei film -->
+    <main>
+        <!-- carosello 1 -->
+        <div class="conainer-fluid overflow-hidden mt-4 ms-3">
+            <h3 class="text-light">Tredding Now</h3>
+            <div class="row flex-nowrap py-2 ps-2">
+                <div class="col px-0 pe-2 mb-3">
+                    <img class="img-w" src="assets/imgs/movies/1.png" alt="Film1">
+                </div>
+                <div class="col px-1 mb-3">
+                    <img class="img-w" src="assets/imgs/movies/2.png" alt="Film2">
+                </div>
+                <div class="col px-1 mb-3">
+                    <img class="img-w" src="assets/imgs/movies/3.png" alt="Film3">
+                </div>
+                <div class="col px-1 mb-3">
+                    <img class="img-w" src="assets/imgs/movies/4.png" alt="Film4">
+                </div>
+                <div class="col px-1 mb-3">
+                    <img class="img-w" src="assets/imgs/movies/5.png" alt="Film5">
+                </div>
+                <div class="col px-1 mb-3">
+                    <img class="img-w" src="assets/imgs/movies/6.png" alt="Film6">
+                </div>
+                <div class="col px-1 mb-3">
+                    <img class="img-w" src="assets/imgs/movies/7.png" alt="Film7">
+                </div>
             </div>
         </div>
-    </div>            
-</section>
-
+        <!-- carosello 2 -->
+        <div class="conainer-fluid overflow-hidden mt-4 ms-3">
+            <h3 class="text-light">Watch it Again</h3>
+            <div class="row flex-nowrap py-2 ps-2">
+                <div class="col px-0 pe-2 mb-3">
+                    <img class="img-w" src="assets/imgs/movies/8.png" alt="Film8">
+                </div>
+                <div class="col px-1 mb-3">
+                    <img class="img-w" src="assets/imgs/movies/9.png" alt="Film9">
+                </div>
+                <div class="col px-1 mb-3">
+                    <img class="img-w" src="assets/imgs/movies/10.png" alt="Film10">
+                </div>
+                <div class="col px-1 mb-3">
+                    <img class="img-w" src="assets/imgs/movies/11.png" alt="Film11">
+                </div>
+                <div class="col px-1 mb-3">
+                    <img class="img-w" src="assets/imgs/movies/12.png" alt="Film12">
+                </div>
+                <div class="col px-1 mb-3">
+                    <img class="img-w" src="assets/imgs/movies/13.png" alt="Film13">
+                </div>
+                <div class="col px-1 mb-3">
+                    <img class="img-w" src="assets/imgs/movies/14.png" alt="Film14">
+                </div>
+            </div>
+        </div>
+        <!-- carosello 3 -->
+        <div class="conainer-fluid overflow-hidden mt-4 ms-3">
+            <h3 class="text-light">New Releases</h3>
+            <div class="row flex-nowrap py-2 ps-2">
+                <div class="col px-0 pe-2 mb-3">
+                    <img class="img-w" src="assets/imgs/movies/15.png" alt="Film15">
+                </div>
+                <div class="col px-1 mb-3">
+                    <img class="img-w" src="assets/imgs/movies/16.png" alt="Film16">
+                </div>
+                <div class="col px-1 mb-3">
+                    <img class="img-w" src="assets/imgs/movies/17.png" alt="Film17">
+                </div>
+                <div class="col px-1 mb-3">
+                    <img class="img-w" src="assets/imgs/movies/18.png" alt="Film18">
+                </div>
+                <div class="col px-1 mb-3">
+                    <img class="img-w" src="assets/imgs/movies/7.png" alt="Film19">
+                </div>
+                <div class="col px-1 mb-3">
+                    <img class="img-w" src="assets/imgs/movies/14.png" alt="Film20">
+                </div>
+                <div class="col px-1 mb-3">
+                    <img class="img-w" src="assets/imgs/movies/1.png" alt="Film21">
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- footer -->
+    <div class="container mt-5 mx-5 px-5">
+        <footer class="ancora">
+            <div class="row mx-5">
+                <ul class="d-flex list-unstyled align-items-center">
+                    <li class="text-light social">
+                        <a class="text-reset" href="https://it-it.facebook.com/">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                    </li>
+                    <li class="text-light social">
+                        <a class="text-reset" href="https://www.instagram.com/">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                    </li>
+                    <li class="text-light social">
+                        <a class="text-reset" href="https://twitter.com/x">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="text-light social">
+                        <a class="text-reset" href="https://www.youtube.com/">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+                    </li>
+                </ul>
+                <div class="col-6 col-md-3">
+                    <ul class="flex-column list-unstyled">
+                        <li class="links"><a class="text-decoration-none text-reset" href="#">Audio and Subtitles</a></li>
+                        <li class="links"><a class="text-decoration-none text-reset" href="#">Media Center</a></li>
+                        <li class="links"><a class="text-decoration-none text-reset" href="#">Privacy</a></li>
+                        <li class="links"><a class="text-decoration-none text-reset" href="#">Contact Us</a></li>
+                        <li class="mt-3">
+                            <button type="button" class="btn bottone btn-outline-secondary">Service Code</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-3">
+                    <ul class="flex-column list-unstyled">
+                        <li class="links"><a class="text-decoration-none text-reset" href="#">Audio Description</a></li>
+                        <li class="links"><a class="text-decoration-none text-reset" href="#">Investor Relations</a></li>
+                        <li class="links"><a class="text-decoration-none text-reset" href="#">Legal Notices</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-3">
+                    <ul class="flex-column list-unstyled">
+                        <li class="links"><a class="text-decoration-none text-reset" href="#">Help Center</a></li>
+                        <li class="links"><a class="text-decoration-none text-reset" href="#">Jobs</a></li>
+                        <li class="links"><a class="text-decoration-none text-reset" href="#">Cookie Preferences</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-3">
+                    <ul class="flex-column list-unstyled">
+                        <li class="links"><a class="text-decoration-none text-reset" href="#">Gift Cards</a></li>
+                        <li class="links"><a class="text-decoration-none text-reset" href="#">Terms of Use</a></li>
+                        <li class="links"><a class="text-decoration-none text-reset" href="#">Corporate Information</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="d-flex flex-column justify-content-between ps-2 mx-5 mt-5">
+                <p class="text-white opacity-50">© 2024 Company, Inc. All rights reserved.</p>            
+            </div>
+        </footer>
+    </div>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
