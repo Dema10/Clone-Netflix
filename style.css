@@ -199,6 +199,7 @@ body {
 }
 
 .links a {
+    font-size: 13px;
     color: white !important;
     opacity: 0.5;
 }
