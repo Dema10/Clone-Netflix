@@ -168,6 +168,11 @@ body {
     }
 }
 
+.ancora {
+    max-width: 910px;
+    margin: auto;
+}
+
 .social:first-child {
     padding: 0;
 }
@@ -189,13 +194,6 @@ body {
 .social:hover {
     opacity: 1;
     cursor: pointer;
-}
-
-@media screen and (max-width:400px) {
-    .ancora {
-        position: absolute;
-        left: 0px; bottom: opx;
-    }
 }
 
 .links a {
